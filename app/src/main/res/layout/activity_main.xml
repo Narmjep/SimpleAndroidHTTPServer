@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#886666"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="44dp"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_ip"
+        android:layout_width="341dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="IP address: 100.123.123.123"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start" />
+
+    <TextView
+        android:id="@+id/txt_port"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Port: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ip" />
+
+    <EditText
+        android:id="@+id/input_port"
+        android:layout_width="68dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="8080"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_port"
+        app:layout_constraintStart_toEndOf="@+id/txt_port"
+        app:layout_constraintTop_toTopOf="@+id/txt_port"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
